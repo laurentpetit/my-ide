@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+   <extension
+         id="myide"
+         name="My IDE"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="org.eclipse.ui.ide.workbench"
+            description="My IDE - a Custom IDE"
+            name="Counterclockwise">
+         <property
+               name="windowImages"
+               value="images/ccw-16x16.png,images/ccw-32x32.png,images/ccw-48x48.png,images/ccw-64x64.png,images/ccw-128x128.png">
+         </property>
+         <property
+               name="aboutImage"
+               value="images/ccw-250x250.png">
+         </property>
+         <property
+               name="startupForegroundColor"
+               value="1C0F3C">
+         </property>
+         <property
+               name="startupProgressRect"
+               value="5,465,500,25">
+         </property>
+         <property
+               name="startupMessageRect"
+               value="7,490,500,25">
+         </property>
+         <property
+               name="appName"
+               value="My IDE">
+         </property>
+         <property
+               name="preferenceCustomization"
+               value="plugin_customization.ini">
+         </property>
+         
+         <property
+            name="introTitle"
+            value="My IDE, the Customized IDE"/>
+          <property
+                name="introBrandingImage"
+                value="product:images/ccw-64x64.png"/>
+          <property
+                name="introBrandingImageText"
+                value="My IDE, the Customized IDE based on Eclipse"/>
+          <property
+                name="aboutText"
+                value="My IDE"/>
+      </product>
+   </extension>
+</plugin>
