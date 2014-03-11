@@ -2,13 +2,13 @@
 <?eclipse version="3.2"?>
 <plugin>
    <extension
-         id="myide"
+         id="my-ide"
          name="My IDE"
          point="org.eclipse.core.runtime.products">
       <product
             application="org.eclipse.ui.ide.workbench"
             description="My IDE - a Custom IDE"
-            name="Counterclockwise">
+            name="My IDE">
          <property
                name="windowImages"
                value="images/ccw-16x16.png,images/ccw-32x32.png,images/ccw-48x48.png,images/ccw-64x64.png,images/ccw-128x128.png">
@@ -49,7 +49,7 @@
                 value="My IDE, the Customized IDE based on Eclipse"/>
           <property
                 name="aboutText"
-                value="My IDE"/>
+                value="My IDE, a Custom IDE&#x0A;&#x0A;This product includes software developed by the&#x0A;Apache Software Foundation http://www.apache.org/"/>
       </product>
    </extension>
 </plugin>

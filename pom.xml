@@ -18,6 +18,7 @@
   
   <modules>
     <module>my-ide.target.e43</module>
+    <module>my-ide.feature</module>
     <module>my-ide.branding</module>
     <module>my-ide.product</module>
   </modules>

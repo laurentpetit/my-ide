@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="my-ide.feature"
+      label="%featureName"
+      version="0.0.1.qualifier"
+      provider-name="%providerName"
+      plugin="my-ide.branding">
+
+   <description url="">
+      %description
+   </description>
+
+   <copyright url="">
+      %copyright
+   </copyright>
+
+   <license url="http://www.eclipse.org/legal/epl-v10.html">
+      %license
+   </license>
+
+   <url>
+      <update label="My IDE Update Site" url="http://updatesite.my-ide.org/stable/"/>
+   </url>
+
+   <requires>
+      <import plugin="org.eclipse.ui"/>
+      <import plugin="org.eclipse.core.runtime" version="3.4.0" match="greaterOrEqual"/>
+   </requires>
+
+   <plugin
+         id="my-ide.branding"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"/>
+
+</feature>

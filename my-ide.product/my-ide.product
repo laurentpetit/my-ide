@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?pde version="3.5"?>
 
-<product name="My IDE" uid="my-ide" id="my-ide.branding" application="org.eclipse.ui.ide.workbench" version="0.0.1.qualifier" useFeatures="true" includeLaunchers="true">
+<product name="My IDE" uid="my-ide" id="my-ide.branding.my-ide" application="org.eclipse.ui.ide.workbench" version="0.0.1.qualifier" useFeatures="true" includeLaunchers="true">
 
    <aboutInfo>
       <image path="/my-ide.branding/images/ccw-250x250.png"/>
-      <text>My IDE, a Custom IDE
+      <text>
+         My IDE, a Custom IDE
 
 This product includes software developed by the
 Apache Software Foundation http://www.apache.org/
@@ -28,7 +29,7 @@ Apache Software Foundation http://www.apache.org/
       startupMessageRect="7,490,500,25"
       startupForegroundColor="1C0F3C" />
    <launcher name="My IDE">
-      <linux icon="images/ccw-48x48.xpm"/> <!-- why 48x48, shouldn't it be 256x256 as for vogella's -->
+      <linux icon="images/ccw-48x48.xpm"/>
       <macosx icon="images/ccw.icns"/>
       <solaris/>
       <win useIco="true">
@@ -37,8 +38,8 @@ Apache Software Foundation http://www.apache.org/
       </win>
    </launcher>
 
-
-   <vm/>
+   <vm>
+   </vm>
 
    <license>
         <url>http://www.eclipse.org/legal/epl-v10.html</url>
@@ -242,17 +243,22 @@ litigation.
          </text>
    </license>
 
-   <plugins/>
+   <plugins>
+   </plugins>
 
    <features>
-      <feature id="org.eclipse.rcp"                       installMode="root"/>
-      <feature id="org.eclipse.platform"                  installMode="root"/>
-      <feature id="org.eclipse.help"                      installMode="root"/>
-      <feature id="org.eclipse.equinox.p2.rcp.feature"    installMode="root"/>
-      <feature id="org.eclipse.equinox.p2.core.feature"   installMode="root"/>
-      <feature id="org.eclipse.equinox.p2.user.ui"        installMode="root"/>
-      <feature id="org.eclipse.equinox.p2.extras.feature" installMode="root"/>
-      <feature id="org.eclipse.jdt"                       installMode="root"/>
+      <feature id="my-ide.feature" version="0.0.1.qualifier"  installMode="root"/>
+      <feature id="org.eclipse.rcp"                           installMode="root"/>
+      <feature id="org.eclipse.platform"                      installMode="root"/>
+      <feature id="org.eclipse.help"                          installMode="root"/>
+      <feature id="org.eclipse.equinox.p2.rcp.feature"        installMode="root"/>
+      <feature id="org.eclipse.equinox.p2.core.feature"       installMode="root"/>
+      <feature id="org.eclipse.equinox.p2.user.ui"            installMode="root"/>
+      <feature id="org.eclipse.equinox.p2.extras.feature"     installMode="root"/>
+      <feature id="org.eclipse.jdt"                           installMode="root"/>
+      <feature id="org.eclipse.emf.ecore"                     installMode="root"/>
+      <feature id="org.eclipse.e4.rcp"                        installMode="root"/>
+      <feature id="org.eclipse.emf.common"                    installMode="root"/>
    </features>
 
    <configurations>
